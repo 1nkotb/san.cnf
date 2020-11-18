@@ -3,7 +3,7 @@
  
 In order to create a CSR and generate a  Key, follow the below steps:
 
-1) Create san.cnf with your editor of choice(vi used here) <br />
+1) Create san.cnf with your editor of choice(vi used here): <br />
     <i>vi san.cnf</i> <br />
 2) Edit san.cnf and add the following:
 
