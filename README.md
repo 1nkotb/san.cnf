@@ -1,9 +1,10 @@
 # san.cnf
-This the configuration file  used for certificate requests (CSR) or Key generation.
-
+<b>This the configuration file  used for certificate requests (CSR) or Key generation. </b>
+ 
 In order to create a CSR and generate a  Key, follow the below steps:
-1) Create san.cnf with your editor of choice(vi used here)
-    vi san.cnf
+
+1) Create san.cnf with your editor of choice(vi used here) <br />
+    <i>vi san.cnf</i> <br />
 2) Edit san.cnf and add the following:
 
 [ req ] <br />
@@ -13,7 +14,7 @@ req_extensions     = req_ext <br />
 <br />
 [ req_distinguished_name ] <br />
 countryName                 = Country Name (2 letter code) <br />
-countryName_default 		= your 2 country Letter code(US, CA, DE) <br />
+countryName_default 		= (US, CA, DE) <br />
 stateOrProvinceName         = State or Province Name (full name) <br />
 stateOrProvinceName_default = our 2 state Letter code(CA, TX, BC) <br />
 localityName               = Locality Name (eg, city) <br />
@@ -33,4 +34,6 @@ DNS.2   = coolserver.fqdn <br />
 IP.1    = 172.16.11.11 <br />
 <br />
 3)Syntax:
-penssl req -out sslcert.csr -newkey rsa:2048 -nodes -keyout private.key -config san.cnf
+openssl req -out sslcert.csr -newkey rsa:2048 -nodes -keyout private.key -config san.cnf
+
+When the above command is run, the predefined values entered will require just an enter and the CSR\Key will have inherit it from the template.
