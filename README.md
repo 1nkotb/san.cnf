@@ -1,2 +1,3 @@
 # san.cnf
-This is used for certificate requests (CSR)
+This the configuration file  used for certificate requests (CSR) or Key generation.
+
